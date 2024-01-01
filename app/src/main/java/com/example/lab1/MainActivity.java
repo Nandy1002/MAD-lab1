@@ -2,6 +2,7 @@ package com.example.lab1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button customButton = findViewById(R.id.custom_button);
+        @SuppressLint("UseSwitchCompatOrMaterialCode")
         Switch buttonEnabler = findViewById(R.id.button_switch);
         CalendarView calenderView = findViewById(R.id.calender);
 
